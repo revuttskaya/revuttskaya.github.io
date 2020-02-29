@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JIT Logistics</title>
+  <link rel="shortcut icon" href="images/logo4.png">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="main-header">
+    <div>
+      <div>
+        <button class="toggle-button">
+          <div class="toggle-button__bar"></div>
+          <div class="toggle-button__bar"></div>
+          <div class="toggle-button__bar"></div>
+        </button>
+        <a href="index.html" class="main-header__brand">
+          <img src="images/logo3.png" alt="Just-in-time logistics - Always in time!">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="html/about-company.html">О Компании</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="html/services.html">Услуги</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="html/news.html">Новости</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="html/contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <nav class="mobile-nav">
+    <span class="mobile-nav__close">&times;</span>
+    <ul class="mobile-nav__items">
+      <li class="mobile-nav__item">
+        <a href="html/about-company.html">О компании</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="html/services.html">Услуги</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="html/news.html">Новости</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="html/contacts.html">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <section class="banner">
+      <div class="banner__inner">
+        <h2>just-in-time logistics</h2>
+        <p>— это белорусско-польская компания, работающая на международном рынке более 9 лет. Она
+          специализируется на экспедировании и логистике.</p>
+        <p>Команда, состоящая более чем из 170 отраслевых специалистов,
+          предоставляет транспортные и складские услуги на самом высоком уровне, доставляя грузы клиентов в любую точку
+          земного шара.</p>
+        <p>Собственное таможенное агентство, три собственных склада в Польше и сеть более чем из 1500
+          агентов по всему миру отличают компанию среди конкурентов.</p>
+        <a href="#" id="myBtn" class="banner__inner__cta-btn" role="button">Отправить запрос</a>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Заполните форму и наш сотрудник свяжется с Вами!</p>
+            <form class="modal-content__input-form">
+
+              <label>Имя:<br>
+                <input type="text">
+              </label><br>
+
+              <label>Фамилия:<br>
+                <input type="text">
+              </label><br>
+
+              <label>Номер телефона:<br>
+                <input type="text">
+              </label><br>
+
+              <label>E-mail:<br>
+                <input type="text">
+              </label><br>
+
+              <a href="#" class="modal-content__input-form__btn" role="button">Отправить</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us">
+      <h1 class="about-us__title">О компании</h1>
+      <div class="about-us__text">
+        <p>Логистическая компания «Just-in-time Logistics» оказывает транспортно-экспедиционные услуги в любой точке
+          мира с 2011 года.
+          За годы работы мы выработали эффективные способы взаимодействия с клиентами и схемы транспортировки грузов
+          различных категорий и объемов. Мы сотрудничаем с ведущими международными перевозчиками и страховыми
+          компаниями, что позволяет обеспечивать оптимальные сроки доставки и высокий уровень безопасности.</p>
+      </div>
+    </section>
+    <section class="background-services"></section>
+    <section class="services">
+      <h1 class="services__title">Услуги</h1>
+      <div class="services__wrapper">
+        <a href="#" class="services__link">
+          <h3>Автомобильные перевозки</h3>
+          <p>Доставка сборных и комплектных грузов, любого тоннажа и объема. Негабаритные перевозки.</p>
+        </a>
+        <a href="#" class="services__link">
+          <h3>Авиаперевозки</h3>
+          <p>Перевозка грузов в сжатые сроки, доставка "от двери до двери".</p>
+        </a>
+        <a href="#" class="services__link">
+          <h3>Морские перевозки</h3>
+          <p>Транспортировка товаров из Китая, Америки, Индии в порты Европы и России.</p>
+        </a>
+        <a href="#" class="services__link">
+          <h3>Железнодорожные перевозки</h3>
+          <p>Экономичная доставка грузов, полное документальное сопровождение.</p>
+        </a>
+        <a href="#" class="services__link">
+          <h3>Складская логистика</h3>
+          <p>Погрузочно-разгрузочные работы, системы автоматизации учета, температурные склады.</p>
+        </a>
+        <a href="#" class="services__link">
+          <h3>Таможенное оформление</h3>
+          <p>Консультация по вопросам таможенного оформления в Беларуси, России, ЕС.</p>
+        </a>
+      </div>
+    </section>
+    <section class="background-contact"></section>
+    <section class="contacts">
+      <h1 class="contacts__title">Контакты</h1>
+      <div class="contacts__wrapper">
+        <div class="contacts__info">
+          <p>г. Минск, ул. Ленина, здание 1</p>
+          <p>+375(29)1515213 (A1, MTC)</p>
+          <p>info@jit-log.com</p>
+          <div class="contacts__info__socials">
+            <a href="https://www.linkedin.com/" target="_blank">
+              <img src="images/linkedin.png" alt="Logo of LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/?hl=ru" target="_blank">
+              <img src="images/instagram.png" alt="Logo of Instagram">
+            </a>
+            <a href="https://www.skype.com/ru/" target="_blank">
+              <img src="images/skype.png" alt="Logo of Skype">
+            </a>
+          </div>
+        </div>
+        <form class="contacts__input-form">
+          <label for="firstName">Имя:</label><br>
+          <input type="text" id="firstName"><br>
+          <label for="secondName">Фамилия:</label><br>
+          <input type="text" id="secondName"><br>
+          <label for="telNumber">Номер телефона:</label><br>
+          <input type="text" id="telNumber"><br>
+          <label for="email">E-mail:</label><br>
+          <input type="text" id="email"><br>
+          <label for="message">Сообщение:</label><br>
+          <textarea id="message" rows="6"></textarea>
+          <input type="checkbox" id="safePolicy">
+          <label for="safePolicy">Нажимая на кнопку «Отправить» я соглашаюсь на обработку персональных
+            данных</label><br>
+          <a href="#" class="contacts__input-form__btn">Отправить</a>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <ul class="main-footer__information">
+      <li class="main-footer__address">
+        <a href="https://yandex.by/maps/157/minsk/search/%D0%B3.%20%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%2C%20%D1%83%D0%BB.%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C%20%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%201/?ll=27.557079%2C53.902570&sll=23.829484%2C53.677850&sspn=0.123253%2C0.041634&z=17"
+           class="main-footer__address-map" target="_blank">
+          г. Минск, ул. Ленина, здание 1
+        </a>
+      </li>
+      <li class="main-footer__telephone">
+        +375(29)1515213 (A1, MTC)
+      </li>
+      <li class="main-footer__email">
+        info@jit-log.com
+      </li>
+    </ul>
+  </footer>
+</body>
+<script src="js/modal.js"></script>
+<script src="js/mobile-menu.js"></script>
+</html>

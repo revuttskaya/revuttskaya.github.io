@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin: 0;
+}
+
+main {
+    min-height: calc(100vh - 3.5rem - 8rem);
+    margin-top: 3.3rem;
+}
+
+.main-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 7px -5px #201A19;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.main-header > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggle-button {
+    width: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+}
+
+.toggle-button__bar {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.main-header__brand {
+    color: #201a19;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-header__brand img {
+    vertical-align: middle;
+}
+
+.main-nav {
+    display: none;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav__item {
+    margin: 0 1rem;
+}
+
+.main-nav__item a,
+.mobile-nav__item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #201a19;
+    font-weight: bold;
+    padding: 0.5rem 0;
+}
+
+.main-nav__item > a:hover,
+.main-nav__item > a:active {
+    color: #d83f2d;
+    border-bottom: 3px #d83f2d solid;
+}
+
+@media (min-width: 70rem) {
+    .toggle-button {
+        display: none;
+    }
+
+    .main-header > div {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 90rem) {
+    .toggle-button {
+        display: none;
+    }
+
+    .main-header > div {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/*mobile navigation*/
+.mobile-nav {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 60%;
+    height: 100vh;
+}
+
+.mobile-nav__close {
+    float: right;
+    margin: 1rem;
+    padding: 0 0.7rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #aaa;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+}
+
+.mobile-nav__close:hover,
+.mobile-nav__close:focus {
+    color: #d83f2d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mobile-nav__items {
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    margin: 5rem auto;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-nav__item {
+    margin: 3rem 0;
+}
+
+.mobile-nav__item a {
+    font-size: 1.5rem;
+}
+
+.mobile-nav__item a:hover {
+    color: #d83f2d;
+}
+
+/*footer*/
+.main-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(43, 43, 79, 0.9);
+    padding: 0.5rem;
+    margin-top: 3rem;
+}
+
+.main-footer__information {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 80%;
+    min-width: 340px;
+}
+
+.main-footer__address, .main-footer__telephone, .main-footer__email {
+    display: block;
+    margin: 0.5rem;
+    color: #e4e9f4;
+    font-size: 1.2rem;
+}
+
+.main-footer__address-map {
+    color: #e4e9f4;
+}
+
+.main-footer__telephone, .main-footer__email {
+    position: relative;
+}
+
+.main-footer__address::before {
+    content: "";
+    position: absolute;
+    left: -8rem;
+    height: 20%;
+    width: 100%;
+    background-image: url("../images/placeholder.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.main-footer__telephone::before {
+    content: "";
+    position: absolute;
+    left: -7rem;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/phone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.main-footer__email::before {
+    content: "";
+    position: absolute;
+    left: -5rem;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/mail.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
